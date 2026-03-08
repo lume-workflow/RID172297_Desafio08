@@ -17,6 +17,8 @@ Pipeline de dados automatizado construído com Apache Airflow e Docker, que proc
 
 ---
 
+https://github.com/lume-workflow/RID172297_Desafio08/blob/main/dags/airflow_details.png
+
 ## 🏗️ Arquitetura Medallion
 
 O pipeline segue a Medallion Architecture, dividindo o processamento em três camadas com níveis crescentes de qualidade e refinamento dos dados.
@@ -47,6 +49,8 @@ Responsável por agregar os dados limpos em um formato pronto para análise e to
   - Classificação dos usuários em faixas etárias (0-10, 11-20, 21-30...)
   - Agregação por faixa etária e status de assinatura (`active` / `inactive`)
   - Geração do total de usuários por grupo
+
+https://github.com/lume-workflow/RID172297_Desafio08/blob/main/dags/airflow_graph.png
 
 ---
 
