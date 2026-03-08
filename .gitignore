@@ -1,0 +1,6 @@
+logs/
+*.pyc
+__pycache__/
+.env
+data/prata/
+data/ouro/
