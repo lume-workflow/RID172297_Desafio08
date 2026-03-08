@@ -17,7 +17,7 @@ Pipeline de dados automatizado construído com Apache Airflow e Docker, que proc
 
 ---
 
-![Pipeline Medallion](dags/airflow_details.png.png)
+![Pipeline Medallion](dags/airflow_details.png)
 
 ## 🏗️ Arquitetura Medallion
 
