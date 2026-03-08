@@ -17,7 +17,7 @@ Pipeline de dados automatizado construído com Apache Airflow e Docker, que proc
 
 ---
 
-https://github.com/lume-workflow/RID172297_Desafio08/blob/main/dags/airflow_details.png
+![Pipeline Medallion](dags/airflow_details.png.png)
 
 ## 🏗️ Arquitetura Medallion
 
@@ -50,7 +50,8 @@ Responsável por agregar os dados limpos em um formato pronto para análise e to
   - Agregação por faixa etária e status de assinatura (`active` / `inactive`)
   - Geração do total de usuários por grupo
 
-https://github.com/lume-workflow/RID172297_Desafio08/blob/main/dags/airflow_graph.png
+![Pipeline Medallion](dags/airflow_graph.png)
+
 
 ---
 
