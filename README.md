@@ -18,6 +18,15 @@ Com essa informação, uma empresa pode identificar, por exemplo, que existe uma
 
 ---
 
+## O pipeline em execução
+
+![Grafo do pipeline](https://raw.githubusercontent.com/lume-workflow/RID172297_Desafio08/main/dags/airflow_graph.png)
+
+---
+
+![Detalhes da execução](https://raw.githubusercontent.com/lume-workflow/RID172297_Desafio08/main/dags/airflow_details.png)
+
+
 ## Como funciona
 
 O pipeline segue a **Medallion Architecture**, processando os dados em três camadas progressivas:
@@ -43,11 +52,11 @@ Os dados limpos são agregados em faixas etárias (0-10, 11-20, 21-30...) e sepa
 
 ## O que aprendi construindo isso
 
-**Sobre dados:** manter as camadas separadas não é burocracia — é o que permite diagnosticar onde um problema começou quando algo dá errado em produção. Sem isso, você perde a capacidade de rastrear a origem de qualquer inconsistência.
+**Sobre dados:** manter as camadas separadas é o que permite diagnosticar onde um problema começou quando algo dá errado em produção. Sem isso, você perde a capacidade de rastrear a origem de qualquer inconsistência.
 
-**Sobre orquestração:** Python puro executa quando você manda. O Airflow executa quando o negócio precisa — com agendamento, monitoramento visual e reprocessamento a partir do ponto de falha, sem precisar rodar tudo do zero.
+**Sobre orquestração:** Python puro executa quando você manda. O Airflow executa quando o negócio precisa: com agendamento, monitoramento visual e reprocessamento a partir do ponto de falha, sem precisar rodar tudo do zero.
 
-**Sobre Docker:** o problema que ele resolve não é técnico, é humano. "Na minha máquina funciona" é uma frase que destrói tempo e confiança em times de dados. O Docker elimina essa variável.
+**Sobre Docker:** o problema que ele resolve não é técnico, é humano. "Na minha máquina funciona" é uma frase que destrói tempo e confiança em times de dados. O Docker elimina essa variável, garantindo que não tenha um choque inesperado entre versões incompatíveis.
 
 **O que eu melhoraria numa versão 2:** validações mais robustas na camada Prata, alertas automáticos por email em caso de falha, e PySpark para suportar volumes maiores de dados sem sobrecarregar a memória.
 
