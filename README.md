@@ -20,11 +20,10 @@ Com essa informação, uma empresa pode identificar, por exemplo, que existe uma
 
 ## O pipeline em execução
 
-![Grafo do pipeline](https://raw.githubusercontent.com/lume-workflow/RID172297_Desafio08/main/dags/airflow_graph.png)
+[![Grafo do pipeline](https://raw.githubusercontent.com/lume-workflow/data-pipeline-airflow-docker/main/dags/airflow_graph.png)](https://raw.githubusercontent.com/lume-workflow/data-pipeline-airflow-docker/main/dags/airflow_graph.png)
 
----
 
-![Detalhes da execução](https://raw.githubusercontent.com/lume-workflow/RID172297_Desafio08/main/dags/airflow_details.png)
+[![Detalhes da execução](https://raw.githubusercontent.com/lume-workflow/data-pipeline-airflow-docker/main/dags/airflow_details.png)](https://raw.githubusercontent.com/lume-workflow/data-pipeline-airflow-docker/main/dags/airflow_details.png)
 
 
 ## Como funciona
@@ -68,8 +67,8 @@ Os dados limpos são agregados em faixas etárias (0-10, 11-20, 21-30...) e sepa
 
 ```bash
 # Clone o repositório
-git clone https://github.com/lume-workflow/RID172297_Desafio08.git
-cd RID172297_Desafio08
+git clone https://github.com/lume-workflow/data-pipeline-airflow-docker.GIT
+cd data-pipeline-airflow-docker
 
 # Crie as pastas necessárias
 mkdir -p data/bronze data/prata data/ouro logs plugins config
