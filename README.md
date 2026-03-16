@@ -67,7 +67,7 @@ Os dados limpos são agregados em faixas etárias (0-10, 11-20, 21-30...) e sepa
 
 ```bash
 # Clone o repositório
-git clone https://github.com/lume-workflow/data-pipeline-airflow-docker.GIT
+git clone https://github.com/lume-workflow/data-pipeline-airflow-docker.git
 cd data-pipeline-airflow-docker
 
 # Crie as pastas necessárias
